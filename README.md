@@ -8,7 +8,7 @@ If you want to use this library for research feel free to contact willem dot mel
 # Install
 [Installation instructions](https://kul-forbes.github.io/nmpc-codegen/install/Matlab_install.html)
 
-# Requirements
+# Requirements (run Matlab_test_utils.m to test this autmatically)
 - Matlab (plain Matlab is enough no toolboxes required)
 - Casadi 3.2 library or more recent (free library)
 - gcc toolchain
