@@ -4,7 +4,8 @@ function trailer_controller = prepare_demo_trailer( controller_folder_name,step_
 %   enviroment. (output location is repo/test_controller_builds/demo_controller_matlab)
 
     % generate static files
-    trailer_controller_output_location =  ['../test_controller_builds/' controller_folder_name];
+    rootdir = get_nmpc_codegen_matlab_rootdir();    
+    trailer_controller_output_location =  fullfile(rootdir, 'test_controller_builds', controller_folder_name);
     nmpccodegen.tools.Bootstrapper.bootstrap(trailer_controller_output_location, true);
 
     % get example model from lib
