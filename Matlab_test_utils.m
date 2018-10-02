@@ -32,8 +32,7 @@ else
 end
 
 command='cmake --help';
-pattern='Specify a source directory';
-if(Matlab_test_utils_test_if_command_available(command,pattern))
+if(Matlab_test_utils_test_if_command_available(command))
     disp('cmake [OK]');
 else
     disp('Error cmake is not available [NOT OK]');
