@@ -12,7 +12,7 @@ minor_version = cell2mat(version_split(2));
 if((major_version<3) || (major_version==3 && minor_version<2))
     disp('unsupported casadi version, install 3.2.x or higher');
 else
-    disp(['casadi version ' version_casadi '[OK]']);
+    disp(['casadi version ' version_casadi ' [OK]']);
 end
 
 command = 'gcc';

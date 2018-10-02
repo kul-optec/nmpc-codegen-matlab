@@ -5,7 +5,7 @@ function [ available ] = Matlab_test_utils_test_if_command_available( command,pa
     % -
     [cmd_exec_status ,cmdout] = system(command);
     if nargin >= 2
-        available = ~isempty(strfind(cmdout,pattern));
+        available = contains(cmdout,pattern);
     else
         available = cmd_exec_status == 0;
     end
