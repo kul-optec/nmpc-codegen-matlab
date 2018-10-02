@@ -12,7 +12,7 @@ minor_version = cell2mat(version_split(2));
 if((major_version<3) || (major_version==3 && minor_version<2))
     disp('unsupported casadi version, install 3.2.x or higher');
 else
-    disp(['casadi version ' version_casadi '[OK]']);
+    disp(['casadi version ' version_casadi ' [OK]']);
 end
 
 command = 'gcc';
@@ -32,8 +32,7 @@ else
 end
 
 command='cmake --help';
-pattern='Specify a source directory';
-if(Matlab_test_utils_test_if_command_available(command,pattern))
+if(Matlab_test_utils_test_if_command_available(command))
     disp('cmake [OK]');
 else
     disp('Error cmake is not available [NOT OK]');
