@@ -5,6 +5,8 @@ Nmpc-codegen generates MPC controllers. The user provides the dynamics of the sy
 
 If you want to use this library for research feel free to contact willem dot melis at outlook dot com . If you have problems of any kind with nmpc-codegen feel free to make an issue.
 
+# Warning: nmpc-codegen does not work with Casadi 3.5 update comming soon !
+
 # Install
 [Installation instructions](https://kul-forbes.github.io/nmpc-codegen/install/Matlab_install.html)
 
